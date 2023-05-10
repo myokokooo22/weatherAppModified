@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="input-group">
+        <input type="text" name="inputCity" id="inputCity" placeholder="Type City">
+        <button type="button" id="detect" class="btn" onclick="detectMyLocation()">Detect My Location</button>
+       </div>
+   
+        <div class="infos hide">
+            <p class="currentGps"></p>
+            <div class="temp">
+                <p id="temp">- <span>°C</span></p>
+                 <span id="icon"><img src="./icons/01d.png" alt="" width="80px"></span>
+            </div>
+            <div id="status" class="status">Sunny</div>
+            <div class="windspeed">Wind Speed: <span id="windSpeed">0</span> MPH</div>
+            <div class="location">
+                <span id="township">Township</span> |
+                <span id="country">Country</span>
+            </div>
+            </div>
+        </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
